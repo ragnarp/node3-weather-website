@@ -1,6 +1,5 @@
 const search = document.querySelector('input')
 const form = document.querySelector('form')
-
 const msg_1 = document.querySelector('#message-1')
 const msg_2 = document.querySelector('#error-1')
 
