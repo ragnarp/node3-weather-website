@@ -1,11 +1,13 @@
 const path = require('path')
 const hbs = require('hbs')
 const express = require('express')
+//var exphbs  = require('express-handlebars');
 const { read } = require('fs')
 const geocode = require('./utils/ceocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
+//var hbs = exphbs.create({ /* config */ });
 
 const port = process.env.PORT || 3000
 
@@ -17,6 +19,9 @@ const partialsPath = path.join(__dirname, '../templates/partials')
 
 //setup handle bars for express engine
 app.set('view engine', 'hbs')
+//app.engine('handlebars', hbs.engine);
+//app.set('view engine', 'handlebars');
+
 app.set('views', viewsPath)
 hbs.registerPartials(partialsPath)
 
