@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client-install": "npm install --prefix client",
     "start": "node src/app.js"
   },
   "keywords": [],
@@ -12,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "hbs": "^4.0.1",
     "request": "^2.88.0"
   }
 }
