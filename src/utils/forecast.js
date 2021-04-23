@@ -9,7 +9,8 @@ const forecast = ({ latitude, longitude }, callback) => {
         } else if (!isWeatherFoundII(response)) {
             callback('Unable to get forecast! ', undefined);
         } else {
-            const forecasst = response.body.current.weather_descriptions[0] + '. It is currently ' + response.body.current.temperature + " but feels like " + response.body.current.feelslike 
+            const forecasst = response.body.current.weather_descriptions[0] + '. It is currently ' + response.body.current.temperature + " but feels like " + response.body.current.feelslike + 
+            " .The wind speed is " + response.body.current.wind_speed
             callback(undefined, { data: forecasst });
         }
     })
